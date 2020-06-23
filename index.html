@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sphinx Task</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css" >
+    <link href="css/index_style_xlg.css" media="screen and (min-width:1251px) and (max-width:1440px)" rel="stylesheet">
+    <link href="css/index_style_lab.css" media="screen and (min-width:993px) and (max-width:1200px)" rel="stylesheet">
+    <link href="css/index_style_lg.css" media="screen and (min-width:769px) and (max-width:992px)" rel="stylesheet">
+    <link href="css/index_style_md.css" media="screen and (min-width:576px) and (max-width:768px)" rel="stylesheet">
+    <link href="css/index_style_sm.css" media="screen and  (min-width:376px) and (max-width:575px)" rel="stylesheet">
+    <link href="css/index_style_xs.css" media="screen and  (max-width:375px)" rel="stylesheet">
+</head>
+
+<body>
+    <!-- sound correct answer -->
+    <audio src="sound/mysound.mp3"></audio>
+    <audio src="sound/wrongsound.mp3"></audio>
+
+    <div class="loader">
+        <img src="images/Preloader_2.gif" alt="">
+    </div>
+    <section class="pb-2" id="sec">
+        <!-- header of the basket -->
+        <div class="row justify-content-between pb-2 m-auto" id="header" >
+            <h4 > What's in basket ? choose and write. </h4>
+            <div class="row justify-content-between">
+                <div class="resource_icon">
+                    <img src="images/resourse_icon.png" alt="">
+                </div>
+                <div class="help_icon">
+                    <img src="images/help_icon.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- the basket and choices -->
+        <div class="body" id="body">
+            <div id="choices"  class="m-auto">
+                <span data-answer="incorrect" class="choise no">scissors</span>
+                <span data-answer="correct" class="choise ">eraser</span>
+                <span data-answer="correct" class="choise ">ruler</span>
+                <span data-answer="incorrect" class="choise no">bag</span>
+                <span data-answer="incorrect" class="choise no">pencil case</span>
+                <span data-answer="correct" class="choise ">pencil</span>
+                <span data-answer="correct" class="choise ">book</span>
+                <span data-answer="correct" class="choise ">pen</span>
+            </div>
+            <div class="content">
+                <div class="divs row">
+                    <div class="left h-100 col-4 m-auto  ">
+                        <div class="option m-auto w-100  m-auto"></div>
+                        <div class="option m-auto w-100  m-auto"></div>
+                    </div>
+                    <div class="center h-100 col-4 m-auto ">
+                        <!-- <div class="option one"></div> -->
+                        <div class="option w-100  m-auto"></div>
+                    </div>
+                    <div class="right h-100 col-4 m-auto ">
+                        <div class="option w-100  m-auto"></div>
+                        <div class="option w-100  m-auto"></div>
+
+                    </div>
+                </div>
+                <div class="row w-100" id="help" >
+                    <div class="d-flex justify-content-between">
+                        <h5 class="d-inline-block opc" style="opacity: 1;">Help content goes here. </h5>
+                        <div class="d-inline-block opc" style="opacity: 1;">
+                            <img src="images/close_icon.png"  id="helpclose"  alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row w-100" id="dumy">
+                    <div class="d-flex justify-content-end">
+                        <div class="d-inline-block opc" style="opacity: 1;">
+                            <img src="images/close_icon.png" id="dumyclose"  alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer of the basket -->
+        <div class="row bg-light pt-2 m-auto" id="footer" >
+            <div class="col-7 reply_holder ">
+                <div class="row justify-content-start replay_icon  py-2" >
+                    <img src="images/replay_icon.png" id="reply_icon"  alt="">
+                </div>
+            </div>
+            <div class="col-4 answer_holder">
+                <div class="row justify-content-start showAns_icon  py-2" >
+                    <img src="images/showAns_icon.png" id="showAns_icon"  alt="">
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* -----------------------------------  loader style------------------------------------------ */
+.loader {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.loader img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loader.hidden {
+  animation: fadeouts 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeouts {
+  100% {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+  /* ------------------------------------------------------------------------------ */
+  #sec {
+    width: 90% !important;
+    margin: auto !important;
+    position: relative;
+  }
+  
+  #sec #header {
+    width: 100% !important;
+    padding: 0 10px;
+}
+  #sec #header h4{
+      font-size: 0.8rem;
+  }
+
+  #sec #header .resource_icon,
+  #sec #header .help_icon {
+    width: 25px;
+    /* margin: 0 5px; */
+  }
+  
+  #sec #header .resource_icon img,
+  #sec #header .help_icon img {
+    width: 20px;
+  }
+  
+  #sec #body {
+    position: relative;
+    height: 80vh;
+  }
+  
+  #sec #body #choices {
+    width: 65%;
+    text-align: center;
+  }
+  
+  #sec #body #choices span {
+    display: inline-block;
+    margin: auto;
+    font-size: 1.1rem !important;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0 7px 7px 0;
+    padding: 0 15px 8px;
+    background-color: #fff;
+    border: 2px solid #0fa0c5;
+    border-radius: 10px;
+  }
+  
+  #sec #body .content {
+    padding: 0 !important;
+    height: 80%;
+    width: 100% !important;
+    margin: auto;
+    background-image: url("../images/p15e11.png");
+    background-size: 100% 100% !important;
+  }
+  
+  #sec #body .content .divs {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    height: 120px;
+    top: 280px;
+    /* background-color: red; */
+  }
+  
+  #sec #body .content .divs .left {
+    position: absolute;
+    left: 0;
+  }
+  
+  #sec #body .content .divs .center {
+    position: absolute;
+    top: 60px;
+    left: 230px;
+    /* background-color: red; */
+  }
+  
+  #sec #body .content .divs .center .one {
+    visibility: hidden;
+  }
+  
+  #sec #body .content .divs .right {
+    position: absolute;
+    right: 0;
+  }
+  
+  #sec #body .content .divs .option {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 55px;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    z-index: 555;
+    padding-top: 25px;
+    
+  }
+  
+  #sec #body .content .divs .option img {
+    width: 25% !important;
+  }
+  
+  #sec #body .content #help,
+  #sec #body .content #dumy {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: 5555;
+    border-radius: 3%;
+    border: 2px solid red;
+    background-color: #fff;
+    margin: auto;
+  }
+  
+  #sec #body .content #help img,
+  #sec #body .content #dumy img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  #sec #body .content #dumy {
+    background-image: url("../images/dummy.jpg");
+    background-size: 100% 100%;
+  }
+  #sec #footer .showAns_icon {
+    width: 25%;
+  }
+  
+  #sec #footer .replay_icon {
+    width: 10%;
+  }
+  
+  .active {
+    background-color: #0fa0c5 !important;
+    color: #fff !important;
+  }
+  
+  #help {
+    display: none;
+  }
+  /*# sourceMappingURL=index.css.map */
